@@ -15,7 +15,11 @@ export const HeroCard = ({
             <div className="card">
                 <div className="row no-gutters">
                     <div className="col-md-4 col-sm-4">
-                        <img src={imagesPath} className='card-img-top' />
+                        <img 
+                            src={imagesPath} 
+                            className='card-img-top' 
+                            alt={superhero}
+                        />
                     </div>
                     <div className="col-md-8 col-sm-8">
                         <div className="card-body">
@@ -23,7 +27,7 @@ export const HeroCard = ({
                             <p className="card-text">{alter_ego}</p>
 
                             {
-                                (alter_ego != characters) &&
+                                (alter_ego !== characters) &&
                                 <p className="text-muted">{characters}</p>
                             }
 

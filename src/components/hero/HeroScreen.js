@@ -17,7 +17,6 @@ export const HeroScreen = () => {
   }
 
   const {
-    id,
     superhero,
     publisher,
     alter_ego,
