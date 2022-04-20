@@ -1,5 +1,5 @@
 
-import { Route, Routes } from 'react-router-dom'
+import { Navigate, Route, Routes } from 'react-router-dom'
 
 import { Navbar } from '../components/ui/Navbar'
 import { DcScreen } from '../components/dc/DcScreen'
@@ -20,6 +20,11 @@ export const DashboardRoutes = () => {
                     <Route path="/hero/:heroId" element={<HeroScreen />} />
 
                     <Route path="/" element={<HeroesHome />} />
+                    <Route
+                        path="*"
+                        element={<Navigate to="/" replace />}
+                    />
+
                 </Routes>
             </div>
         </>
