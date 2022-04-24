@@ -14,15 +14,15 @@ export const DashboardRoutes = () => {
             <Navbar />
             <div className='container mt-5'>
                 <Routes>
-                    <Route path="./marvel" element={<MarvelScreen />} />
-                    <Route path="./dc" element={<DcScreen />} />
-                    <Route path="./search" element={<SearchScreen />} />
-                    <Route path="./hero/:heroId" element={<HeroScreen />} />
+                    <Route path="/marvel" element={<MarvelScreen />} />
+                    <Route path="/dc" element={<DcScreen />} />
+                    <Route path="/search" element={<SearchScreen />} />
+                    <Route path="/hero/:heroId" element={<HeroScreen />} />
 
-                    <Route path="./" element={<HeroesHome />} />
+                    <Route path="/" element={<HeroesHome />} />
                     <Route
                         path="*"
-                        element={<Navigate to="./" replace />}
+                        element={<Navigate to="/" replace />}
                     />
 
                 </Routes>
