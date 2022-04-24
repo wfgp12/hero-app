@@ -1,1 +1,1 @@
-export const heroImages = require.context('../assets/heros', true)
+export const heroImages = require.context('./../assets/heros', true)
